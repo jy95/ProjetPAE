@@ -1,0 +1,46 @@
+<!-- fenetre modale (pour info/cr&eacute;ation d'une demande -->
+<div id="abandonModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<!-- Modal content-->
+
+			<form role="form" class="form-horizontal" method="post"
+				id="creationAnnulation">
+				<div class="modal-body">
+					<fieldset class="fsStyle">
+						<div id="abandon">
+							<div class="form-group">
+								<label for="abandon" class="col-sm-2 control-label">raison
+									d'abandon :</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" name="descriptionAnnulation" rows="3"
+										id="descriptionAnnulation"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="validerAbandon" class="col-sm-2 control-label">Etes-vous
+									sur de vouloir abandonner? </label>
+								<div class="col-sm-10">
+									<input name="validationAnnulation" id="validationAnnulation"
+										type="checkbox" class="form-control">
+								</div>
+							</div>
+							<label id="labelHistoriqueAbandon" style="width: 200px">historique de raison d'abandon:</label>
+										<div class="form-group">
+											<select class="form-control raisonAbandon" id="raisonAbandon"
+												name="raisonAbandon" style="width: 100%;"></select>
+										</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="modal-footer">
+					<input type="submit" class="btn btn-primary" value="Enregistrer" id="BoutEnregistrerAbandon"/>
+					<button type="button" class="btn btn-default modalClose"
+						data-dismiss="modal">fermer</button>
+				</div>
+				<input type="hidden" name="mobAnnul" value=""/>
+				<input type="hidden" name="numVersion" value=""/>
+			</form>
+		</div>
+	</div>
+</div>

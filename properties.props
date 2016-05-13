@@ -1,0 +1,41 @@
+
+
+# DB Access
+
+UrlConnection=jdbc:postgresql://URLDB
+UserConnection=yourUser
+PasswordConnection=Klm123
+
+# Object factory
+
+DtoFactory=biz.factory.DtoFactoryImpl
+DalServices=persistance.dal.DalServicesImpl
+
+# Data access object
+
+AnnulationDao=persistance.dao.AnnulationDaoImpl
+DemandeDao=persistance.dao.DemandeDaoImpl
+DemandePaiementDao=persistance.dao.DemandePaiementDaoImpl
+DepartementDao=persistance.dao.DepartementDaoImpl
+DocDepartDao=persistance.dao.DocDepartDaoImpl
+DocRetourDao=persistance.dao.DocRetourDaoImpl
+MobiliteDao=persistance.dao.MobiliteDaoImpl
+PartenaireDao=persistance.dao.PartenaireDaoImpl
+PaysDao=persistance.dao.PaysDaoImpl
+UserDao=persistance.dao.UserDaoImpl
+
+# Use Case Controller
+
+UserUcc=biz.ucc.UserUccImpl
+PartenaireUcc=biz.ucc.PartenaireUccImpl
+MobiliteUcc=biz.ucc.MobiliteUccImpl
+DemandeUcc=biz.ucc.DemandeUccImpl
+DemandePaiementUcc=biz.ucc.DemandePaiementUccImpl
+AnnulationUcc=biz.ucc.AnnulationUccImpl
+DocRetourUcc=biz.ucc.DocRetourUccImpl
+DocDepartUcc=biz.ucc.DocDepartUccImpl
+PaysUcc=biz.ucc.PaysUccImpl
+
+# JWT key
+
+cleCryptageJWT=dfhqsb  qsfhqmf f qsfqsbfv dgs,fqsfdjgfeqsf54684681

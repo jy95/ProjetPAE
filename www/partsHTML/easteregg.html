@@ -1,0 +1,40 @@
+<div class="container-fluid section" id="easterEgg" style="display: none">
+			<div class="row">
+				<div class="col-lg-12">
+				<h1>Un moment de d&eacute;tente....</h1>
+<canvas id="myCanvas" width="1000" height="500"
+	style="background-color: black;"></canvas>
+	
+	</div>
+	</div>
+</div>
+<script>
+	var canvas = document.getElementById('myCanvas');
+	var context = canvas.getContext('2d');
+	var imageObj = new Image();
+	
+	imageObj.src = '/pictures/animeP.png';
+	var pigs = [];
+	for (var i = 0; i < 200; i++) {
+		pigs.push({
+			scale : Math.random() * 100,
+			y : Math.random() * 450,
+			x : Math.random() * 2000
+		});
+	}
+	pigs.sort(function(a, b) {
+		return a.scale - b.scale;
+	});
+
+	function update() {
+		context.clearRect(0, 0, 1000, 500);
+		for (var i = 0; i < pigs.length; i++) {
+			context.restore();
+			pigs[i].x += .1 * pigs[i].scale;
+			context.drawImage(imageObj, (pigs[i].x % 1300) - 300, pigs[i].y
+					+ Math.sin(pigs[i].x / 100) * 15, pigs[i].scale,
+					pigs[i].scale);
+		}
+	}
+	setInterval(update, 1000 / 60);
+</script>

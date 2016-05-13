@@ -1,0 +1,76 @@
+
+<div class="modal fade" id="infoMobilite" role="dialog">
+	<div class="modal-dialog modal-lg">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">D&eacute;tails de la mobilit&eacute;</h4>
+			</div>
+			<div class="modal-body">
+				<form role="form" class="form-horizontal" method="post"
+					id="change_mob">
+					<div class="form-group">
+						<label for="Partenaire" class="col-sm-2 control-label">Partenaire
+							:</label>
+						<div class="col-sm-10">
+							<a href="#" class="infoPart" id="Partenaire" >Informations</a>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="Etudiant" class="col-sm-2 control-label">Etudiant
+							:</label>
+						<div class="col-sm-10">
+							<a href="#" class="infoStud" >Informations</a>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="dateDepart" class="col-sm-2 control-label">Date
+							de d&eacute;part :</label>
+						<div class="col-sm-4">
+							<input id="dateDepart" name="dateDepart"
+								class="form-control datepicker" value=" " />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="dateRetour" class="col-sm-2 control-label">Date
+							de retour :</label>
+						<div class="col-sm-4">
+							<input id="dateRetour" name="dateRetour"
+								class="form-control datepicker" value=" " />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="datePaiement1" class="col-sm-2 control-label">Date
+							Paiement 1 :</label>
+						<div class="col-sm-4">
+							<input id="datePaiement1" name="datePaiement1"
+								class="form-control datepicker" value=" " />
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="datePaiement2" class="col-sm-2 control-label">Date
+							Paiement 2 :</label>
+						<div class="col-sm-4">
+							<input id="datePaiement2" name="datePaiement2"
+								class="form-control datepicker" value=" " />
+						</div>
+					</div>
+					<div class="form-group" id="infoDocDepartCheckbox">
+						<!-- Checkbox Document de d&eacute;part -->
+
+					</div>
+					<div class="form-group" id="infoDocRetourCheckbox"></div>
+					<input type="hidden" name="idMobilite" value=""/>
+					<input type="hidden" name="idDocDepart" value=""/>
+					<input type="hidden" name="NumVersionDocDepart" value=""/>
+					<input type="hidden" name="idDocRetour" value=""/>
+					<input type="hidden" name="NumVersionDocRetour" value=""/>
+					<div class="modal-footer">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

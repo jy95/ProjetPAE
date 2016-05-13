@@ -1,0 +1,110 @@
+<!-- page de profil -->
+		<div class="container-fluid section" id="sectionProfilSection" style="display: none">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">Profil</h1>
+					<form role="form" class="form-horizontal" method="post"
+						id="profil-edit">
+						<div class="form-group">
+							<label for="pwd" class="col-sm-2 control-label">Nouveau
+								Password :</label>
+							<div class="col-sm-10">
+								<input name="pwd" id="pwd" type="password" class="form-control"
+									placeholder="Optionnel" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="titre" class="col-sm-2 control-label">Titre :</label>
+							<div class="col-sm-4">
+								<select name="titre" id="titre" class="form-control titre" style="width: 100%;"></select>
+							</div>
+							<label for="sexe" class="col-sm-2 control-label">Sexe :</label>
+							<div class="col-sm-4">
+								<select name="sexe" id="sexe" class="form-control sexe" style="width: 100%;"></select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nom" class="col-sm-2 control-label">Nom : </label>
+							<div class="col-sm-4">
+								<input type="text" name="nom" class="form-control" placeholder="Nom" />
+							</div>
+							<label for="prenom" class="col-sm-2 control-label">Prenom</label>
+							<div class="col-sm-4">
+								<input type="text" name="prenom" class="form-control" placeholder="Prenom" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nationalite" class="col-sm-2 control-label">Nationalit&eacute;
+								:</label>
+							<div class="col-sm-4">
+								<input type="text" name="nationalite" class="form-control" />
+							</div>
+							<label for="dateNaissance" class="col-sm-2 control-label">Date
+								de Naissance :</label>
+							<div class="col-sm-4">
+								<input id="DateNaissance" name="dateNaissance"
+									class="form-control datepicker" type="text" value=" " />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-sm-2 control-label">Email :</label>
+							<div class="col-sm-4">
+								<input name="email" id="emailProfil" type="email" class="form-control" />
+							</div>
+							<label for="email" class="col-sm-2 control-label">T&eacute;l&eacute;phone
+								:</label>
+							<div class="col-sm-4">
+								<input name="telephone" type="tel" class="form-control" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="adresseUser" class="col-sm-2 control-label">Adresse
+								:</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" rows="3" id="adresseUser"
+									name="adresse"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="nbAnneeSup" class="col-sm-2 control-label">Nombre
+								d'ann&eacute;es dans le sup&eacute;rieur :</label>
+							<div class="col-sm-1">
+								<input name="nbAnneeSup" min="0" type="number" class="form-control" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="CptBancaire" class="col-sm-2 control-label">Compte
+								bancaire :</label>
+							<div class="col-sm-10">
+								<input name="CptBancaire" type="text" class="form-control"
+									title="exemple : BE24-0241-1251-1364" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="NomBanque" class="col-sm-2 control-label">Nom
+								banque :</label>
+							<div class="col-sm-5">
+								<input name="NomBanque" type="text" class="form-control" />
+							</div>
+							<label for="CodeBic" class="col-sm-2 control-label">Code
+								Bic :</label>
+							<div class="col-sm-3">
+								<input name="CodeBic" type="text" maxlength="11"
+									class="form-control" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="TituCpt" class="col-sm-2 control-label">Titulaire
+								Compte :</label>
+							<div class="col-sm-10">
+								<input name="TituCpt" type="text" class="form-control"
+									placeholder="Optionnel" />
+							</div>
+						</div>
+						<input type="hidden" value="" name="numVersion"/>
+						<input id="EditProfil" type="submit"
+							class="btn btn-lg btn-success btn-block" value="Valider" />
+					</form>
+				</div>
+			</div>
+		</div>

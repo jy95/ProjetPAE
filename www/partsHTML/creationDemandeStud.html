@@ -1,0 +1,80 @@
+<!-- Cr&eacute;ation d'une demande de mobilit&eacute;  -->
+<div class="container-fluid creationDemande section"
+	style="display: none">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Enregistrement d'une demande de
+				mobilit&eacute;</h1>
+			<form role="form" class="form-horizontal" method="post"
+				id="enregistrerDemande">
+				<div class="form-group">
+					<label for="titre" class="col-sm-2 control-label">Niveau de
+						pr&eacute;f&eacute;rence :</label>
+					<div class="col-sm-10">
+						<input type="number" min="1" name="preference" id="preference"
+							class="form-control" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pays" class="col-sm-2 control-label">Pays :</label>
+					<div class="col-sm-4">
+						<select name="pays" id="pays" style="width: 100%"
+							class="form-control pays"></select>
+					</div>
+					<label for="ville" class="col-sm-2 control-label">Ville :</label>
+					<div class="col-sm-4">
+						<input name="ville" type="text" class="form-control" />
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="partenaire" class="col-sm-2 control-label">Partenaire
+						:</label>
+					<div class="col-sm-7">
+						<select name="partenaire" id="partenaire" class="form-control"></select>
+					</div>
+					<!-- Mettre le lien de la fenetre modale ici -->
+					<div class="col-sm-3">
+						<button type="button" class="btn btn-info btn-lg"
+							id="boutonCreationPartenaire" data-toggle="modal"
+							data-target="#partenaireModal">Ajouter un partenaire</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="programme" class="col-sm-2 control-label">Programme
+						:</label>
+					<div class="col-sm-2">
+						<select name="programme" id="programme"
+							class="form-control programme" style="width: 100%;"></select>
+					</div>
+					<label for="type" class="col-sm-2 control-label">Type Stage
+						:</label>
+					<div class="col-sm-6 typeStage">
+						<!-- Radios buttons ici en ajax -->
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="quadrimestre" class="col-sm-2 control-label">Quadrimestre
+						:</label>
+					<div class="col-sm-10">
+						<select name="quadrimestre" id="quadri" class="form-control">
+							<option value="1">1er quadrimestre</option>
+							<option value="2">2e quadrimestre</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="intervalDateMob" class="col-sm-2 control-label">Ann&eacute;e
+						Acad&eacute;mique :</label>
+					<div class="col-sm-10">
+						<select name="AnneeAcademique" id="anneeAcademique" class="dateRangeAcademie"
+							style="width: 100%;"></select>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" class="btn btn-lg btn-success btn-block"
+						value="Soumettre" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

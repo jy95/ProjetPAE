@@ -1,0 +1,163 @@
+<!-- fenetre modale (pour info/cr&eacute;ation d'un partenaire -->
+<div id="partenaireModal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<form role="form" class="form-horizontal" method="post"
+				id="CreationPartenaire">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Cr&eacute;ation d'un partenaire</h4>
+				</div>
+				<div class="modal-body">
+					<fieldset class="fsStyle">
+						<legend>
+							<button type="button" class="btn btn-link"
+								onclick="cacherOuMontrer('InforPartenaire');">Information
+								Partenaire</button>
+						</legend>
+						<div id="InforPartenaire">
+							<div class="form-group">
+								<label for="nomLegal" class="col-sm-2 control-label">Nom
+									l&eacute;gal :</label>
+								<div class="col-sm-10">
+									<input type="text" id="nomLegal" name="nomLegal"
+										class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="nomAffaire" class="col-sm-2 control-label">Nom
+									affaire :</label>
+								<div class="col-sm-10">
+									<input type="text" id="nomAffaire" name="nomAffaire"
+										class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="nomComplet" class="col-sm-2 control-label">Nom
+									complet :</label>
+								<div class="col-sm-10">
+									<input type="text" id="nomComplet" name="nomComplet"
+										class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="nombreEmp" class="col-sm-2 control-label">Nombre
+									employ&eacute;s :</label>
+								<div class="col-sm-2">
+									<input type="number" min="1" name="nombreEmp" id="nombreEmp"
+										class="form-control" />
+								</div>
+								<label for="typeOrganisation" class="col-sm-2 control-label">Type
+									d'organisation :</label>
+								<div class="col-sm-6">
+									<select name="typeOrganisation" id="typeEntreprise"
+										style="width: 100%" class="form-control"></select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="typeStagePartenaire" class="col-sm-2 control-label">Type
+									de stage :</label>
+								<div class="col-sm-10 typeStage">
+									<!-- Radios buttons ici en ajax -->
+								</div>
+							</div>
+							<div class="form-group">
+							<label for="departements" class="col-sm-2 control-label">D&eacute;partement(s) :</label>
+								<div class="col-sm-10 departements">
+									<select name="departements" id="partDepartement" class="departement" multiple="multiple" style="display:none; width: 100%;"></select>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset>
+						<legend>
+							<button type="button" class="btn btn-link"
+								onclick="cacherOuMontrer('LocalisationPartenaire');">Localisation</button>
+						</legend>
+						<div id="LocalisationPartenaire">
+							<div class="form-group">
+								<label for="adressePartenaire" class="col-sm-2 control-label">Adresse
+									:</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" name="adressePartenaire"
+										rows="3" id="adressePartenaire"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="paysPartenaire" class="col-sm-2 control-label">Pays
+									:</label>
+								<div class="col-sm-10">
+									<select name="paysPartenaire" style="width: 100%"
+										id="paysPartenaire " class="form-control pays"
+										data-live-search="true"></select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="regionPartenaire" class="col-sm-2 control-label">R&eacute;gion
+									:</label>
+								<div class="col-sm-10">
+									<input type="text" id="regionPartenaire" name="regionPartenaire" class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="codePostalPartenaire" class="col-sm-2 control-label">Code
+									Postal :</label>
+								<div class="col-sm-10">
+									<input type="text" name="codePostalPartenaire" id="codePostalPartenaire"
+										class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="villePartenaire" class="col-sm-2 control-label">Ville
+									:</label>
+								<div class="col-sm-10">
+									<input type="text" name="villePartenaire" id="villePartenaire" class="form-control" />
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<hr>
+					<fieldset>
+						<legend>
+							<button type="button" class="btn btn-link"
+								onclick="cacherOuMontrer('ContactPartenaire');">Contact</button>
+						</legend>
+						<div id="ContactPartenaire">
+							<div class="form-group">
+								<label for="emailPartenaire" class="col-sm-2 control-label">Email
+									:</label>
+								<div class="col-sm-10">
+									<input type="email" id="emailPartenaire"name="emailPartenaire" class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="SiteWebPartenaire" class="col-sm-2 control-label">Site
+									Web :</label>
+								<div class="col-sm-10">
+									<input type="text" name="siteWebPartenaire" id="siteWebPartenaire"
+										class="form-control" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="TelPartenaire" class="col-sm-2 control-label">T&eacute;l&eacute;phone
+									:</label>
+								<div class="col-sm-10">
+									<input type="text" name="telPartenaire" id="telPartenaire"class="form-control" />
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="modal-footer">
+					<input type="submit" class="btn btn-primary" value="Enregistrer" />
+					<button type="button" class="btn btn-default modalClose"
+						data-dismiss="modal">fermer</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>

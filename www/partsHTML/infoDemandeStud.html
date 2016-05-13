@@ -1,0 +1,65 @@
+<!-- Cr&eacute;ation d'une demande de mobilit&eacute;  -->
+<div class="container-fluid infoDemandeSection section"
+	style="display: none">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Informations de cette demande de
+				mobilit&eacute;</h1>
+			<p class="text-info " id="EtatDemande"></p>
+			<div class="form-group">
+				<label for="titre" class="col-sm-2 control-label">Niveau de
+					pr&eacute;f&eacute;rence :</label>
+				<div class="col-sm-10">
+					<input type="number" min="1" name="preference" id="preference"
+						class="form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="pays" class="col-sm-2 control-label">Pays :</label>
+				<div class="col-sm-10">
+					<select name="pays" id="pays" style="width: 100%"
+						class="form-control pays"></select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="ville" class="col-sm-2 control-label">Ville :</label>
+				<div class="col-sm-10">
+					<input name="ville" type="text" class="form-control" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="partenaire" class="col-sm-2 control-label">Partenaire
+					:</label>
+				<div class="col-sm-10">
+					<button type="button" class="btn btn-info infoPartInfoDemande">Infos</button>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="programme" class="col-sm-2 control-label">Programme
+					:</label>
+				<div class="col-sm-10">
+					<select name="programme" class="form-control programme"
+						style="width: 100%;"></select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="quadrimestre" class="col-sm-2 control-label">Quadrimestre
+					:</label>
+				<div class="col-sm-10">
+					<select name="quadrimestre" id="quadri" class="form-control">
+						<option value="1">1er quadrimestre</option>
+						<option value="2">2e quadrimestre</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="type" class="col-sm-2 control-label">Type Stage
+					:</label>
+				<div class="col-sm-10 typeStage">
+					<!-- Radios buttons ici en ajax -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

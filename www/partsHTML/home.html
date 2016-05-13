@@ -1,0 +1,87 @@
+<div class="container ZonePrincipal" id="HomeHermes">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="alert" id="messageConnexion" style="display: none">
+							<strong>Erreur!</strong> Utilisateur ou mot de passe erron&eacute;.
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Connection</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Inscription</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form role="form" method="post" id="login-form">
+									<fieldset>
+										<label style="width: 200px">Pseudo:</label>
+										<div class="form-group">
+											<input class="form-control" placeholder="Pseudo"
+												name="pseudo" type="text" autofocus>
+										</div>
+										<label style="width: 200px">Mot de passe:</label>
+										<div class="form-group">
+											<input class="form-control" placeholder="Password"
+												name="password" type="password" value="">
+										</div>
+										<input id="Login" type="submit"
+											class="btn btn-lg btn-success btn-block" value="Se connecter" />
+									</fieldset>
+								</form>
+								<!-- inscription -->
+								<form id="register-form" method="post" role="form"
+									style="display: none;">
+									<fieldset>
+										<label style="width: 200px">Nom:</label>
+										<div class="form-group">
+											<input class="form-control" placeholder="Nom" name="nom"
+												type="text" autofocus>
+										</div>
+										<label style="width: 200px">Prenom:</label>
+										<div class="form-group">
+											<input class="form-control" placeholder="Prenom"
+												name="prenom" type="text" autofocus>
+										</div>
+										<label style="width: 200px">Pseudo:</label>
+										<div class="form-group">
+											<input class="form-control" placeholder="Pseudo"
+												name="pseudo" type="text" autofocus>
+										</div>
+										<label style="width: 200px">Mot de passe:</label>
+										<div class="form-group">
+											<input class="form-control" placeholder="Password"
+												name="password1" type="password" value="">
+										</div>
+										<label style="width: 200px"> Confirmation Mot de
+											passe:</label>
+										<div class="form-group">
+											<input class="form-control" placeholder="Password"
+												name="password2" type="password" value="">
+										</div>
+										<label style="width: 200px">Email:</label>
+										<div class="form-group input-group">
+											<span class="input-group-addon">@</span> <input
+												class="form-control" placeholder="email" name="email"
+												type="text">
+										</div>
+										<label style="width: 200px">D&eacute;partement:</label>
+										<div class="form-group">
+											<select class="form-control" id="departement"
+												name="departement" style="width: 100%;"></select>
+										</div>
+										<button class="btn btn-lg btn-success btn-block">S'inscrire</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
